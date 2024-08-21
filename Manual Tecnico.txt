@@ -1,0 +1,44 @@
+Manual Técnico:
+
+HTML (index.html):
+1.	Estructura Básica:
+o	Sección Principal: La estructura HTML contiene una única sección (<section>) 
+    que alberga un título (<h1>), un formulario simple con un campo de entrada (<input>), y un botón (<button>).
+o	Campo de Entrada: El campo de entrada es de tipo número,
+    donde el usuario puede especificar el tamaño de la fuente en píxeles (por ejemplo, 18).
+o	Botón de Acción: El botón activa el cambio de tamaño de fuente al ser clicado.
+o	Párrafo de Ejemplo: Un artículo (<article>) contiene un párrafo (<p>)
+    cuyo tamaño de fuente se modificará según la entrada del usuario.
+
+CSS (estilos.css):
+1.	Estilos Globales:
+o	Cuerpo de la Página: El body tiene una fuente estándar (Arial), 
+    está centrado con texto alineado y tiene un color de fondo gris claro por defecto.
+2.	Estilos Específicos:
+o	Título (h1): El título se estiliza con un color oscuro para destacarse.
+o	Sección Principal (section): Se centraliza la sección con un fondo blanco,
+    bordes redondeados y una ligera sombra para darle un aspecto de tarjeta.
+o	Campo de Entrada y Botón: Ambos tienen márgenes y padding para mantener un espaciado uniforme,
+    con bordes redondeados para mejorar la presentación.
+o	Párrafo de Texto (#texto p): El párrafo tiene un tamaño de fuente inicial de 16px y
+    un color de texto oscuro para una lectura cómoda.
+
+JavaScript (script.js):
+1.	Obtención de Elementos del DOM:
+o	Variables: Se utilizan tres variables (botonCambiarTamano, campoTamanoFuente, y parrafoTexto)
+    para almacenar las referencias al botón, al campo de entrada, y al párrafo de texto, respectivamente.
+    Estas se obtienen mediante getElementById y getElementsByTagName.
+2.	Evento click:
+o	EventListener: Se añade un eventListener al botón que escucha el evento click. Al hacer clic,
+    el valor del campo de entrada se lee, se concatena con 'px', y se almacena en la variable tamano.
+3.	Cambio de Estilo:
+o	Aplicación del Estilo: El tamaño de fuente del párrafo se actualiza dinámicamente utilizando
+    la propiedad style.fontSize y el valor introducido por el usuario.
+
+Conclusión:
+Este ejercicio demuestra cómo permitir a los usuarios personalizar el estilo de un elemento en una página web,
+en este caso, modificando el tamaño de la fuente de un párrafo.
+Es una excelente manera de practicar la manipulación del DOM y la actualización de estilos en respuesta
+a la entrada del usuario en tiempo real.
+
+Github:
